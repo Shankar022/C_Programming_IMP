@@ -1,0 +1,9 @@
+# CMake
+cmake-build-*/
+
+# CLion
+.idea
+.gitattributes
+CMakeLists.txt
+.DS_Store
+
