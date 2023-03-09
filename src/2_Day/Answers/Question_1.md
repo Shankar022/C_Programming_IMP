@@ -1,4 +1,4 @@
-## Write a program to check the eligibility of a person for driving based on their age.  
+## 1. Write a program to check the eligibility of a person for driving based on their age.  
 
 ```c
 #include <stdio.h>
