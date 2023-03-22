@@ -14,6 +14,6 @@
 | 12. | Write a C program to swap first and last digits of a number.                                | [Link -> ](/src/3_Day/Answers/Question_00.md)  |                                                                                                                                                                                                                                                 
 | 13. | Write a C program to calculate sum of digits of a number.                                   | [Link -> ](/src/3_Day/Answers/Question_00.md)  |                                             
 | 14. | Write a C program to calculate product of digits of a number.                               | [Link -> ](/src/3_Day/Answers/Question_00.md)  |                                           
-| 15. | Write a C program to enter a number and print its reverse.                                  | [Link -> ](/src/3_Day/Answers/Question_00.md)  |                                    
+| 15. | Write a C program to enter a number and print its reverse.                                  | [Link -> ](/src/3_Day/Answers/Question_000.md) |                                    
 | 16. | Write a C program to check whether a number is palindrome or not.                           | [Link -> ](/src/3_Day/Answers/Question_00.0md) |                                    
 
