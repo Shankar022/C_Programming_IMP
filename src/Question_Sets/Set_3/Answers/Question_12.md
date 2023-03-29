@@ -7,13 +7,23 @@ int main() {
     
     printf("Enter a number: ");
     scanf("%d", &num);
+    
+    //find the last digit
     int lastdigit=num%10;
+    
+    //count the digit of the number
     int count=log10(num);
+    
+    //find the first value
     int firstdigit=num/pow(10,count);
+    
+    //swap first and last digit
     int swap=lastdigit*pow(10,count);
     swap=swap+num%(int)pow(10,count);
     swap=swap-lastdigit;
     swap=swap+firstdigit;
+    
+    //print the swapped number
     printf("%d",swap);
     return 0;
     }
