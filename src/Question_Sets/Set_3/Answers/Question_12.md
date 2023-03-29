@@ -1,47 +1,54 @@
 ## 12.	Write a C program to swap first and last digits of a number.
 ```c
 #include <stdio.h>
-
+#include <math.h>
 int main() {
-    int n, original_n, first_digit, last_digit, temp, digits_count = 0;
+    int num;
     
     printf("Enter a number: ");
-    scanf("%d", &n);
-    original_n = n; // store the original value of n
-    
-    // count the number of digits in n
-    while (n != 0) {
-        digits_count++; 
-        n /= 10;
-    }
-    
-    // find the first digit
-    first_digit = original_n / pow(10, digits_count - 1);
-    
-    // find the last digit
-    last_digit = original_n % 10;
-    
-    // swap the first and last digits
-    temp = original_n % (int) pow(10, digits_count - 1);
-    temp /= 10;
-    temp *= 10;
-    temp += first_digit;
-    temp *= pow(10, digits_count - 1);
-    temp += last_digit;
-    
-    printf("After swapping the first and last digits, the number is: %d\n", temp);
-    
+    scanf("%d", &num);
+    int lastdigit=num%10;
+    int count=log10(num);
+    int firstdigit=num/pow(10,count);
+    int swap=lastdigit*pow(10,count);
+    swap=swap+num%(int)pow(10,count);
+    swap=swap-lastdigit;
+    swap=swap+firstdigit;
+    printf("%d",swap);
     return 0;
-}
+    }
 
 ```
 ### Explanation :
-- We declare six integer variables `n, original_n, first_digit, last_digit, temp, and digits_count`.
-- We ask the user to enter a number using `printf()` and `scanf()`.
-- We store the original value of n in original_n for later use.
-  - We count the number of digits in n using a `while` loop. We divide n by 10 repeatedly until it is 0, which increments the digits_count variable by 1 for each division.
-- We find the first digit of the number by dividing original_n by 10 raised to the power of digits_count - 1. We use the pow() function from the `math.h` library to calculate this.
-- We find the last digit of the number using the modulus operator %.
-- We swap the first and last digits by creating a temporary variable temp. We first remove the first digit from original_n by using the `modulus operator %` and dividing by 10. We then multiply by 10 to make room for the first digit. We add the first digit to temp using the `+=` operator. We then multiply temp by 10 raised to the power of digits_count - 1 to make room for the last digit. We add the last digit to temp using the += operator.
-- We print out the result using `printf()`.
-- Note: This program assumes that the user will enter a positive integer. It does not handle negative numbers or non-integer inputs.
+- The code begins by including the necessary header files stdio.h and math.h using the preprocessor directives #include. The stdio.h header file provides the input/output functions while math.h header file provides math functions like pow and log10.
+
+- The main() function is defined which returns an integer value.
+
+- Inside the main() function, an integer variable num is declared to store the input number from the user.
+
+- The printf() function is used to prompt the user to enter a number.
+
+- The scanf() function is used to read the integer input value from the user and store it in the variable num.
+
+- The last digit of the input number num is calculated using the modulus operator % with the number 10 and stored in the integer variable lastdigit.
+
+- The number of digits in the input number num is calculated using the log10() function of math.h header file. This returns the logarithm of the input number to base 10, which gives the number of digits in the input number. The result is cast to an integer and stored in the variable count.
+
+- The first digit of the input number num is calculated by dividing the input number num by 10 raised to the power of count - 1 using the pow() function of math.h header file. The result is cast to an integer and stored in the variable firstdigit.
+
+- The last digit of the input number is swapped with the first digit using a series of mathematical operations.
+
+- The last digit is multiplied by 10 raised to the power of count using the pow() function, and stored in the variable swap.
+
+- The remainder of the input number when divided by 10 raised to the power of count is added to swap.
+
+- The last digit lastdigit is subtracted from swap.
+
+- Finally, the first digit firstdigit is added to swap.
+
+- The resulting swapped number swap is printed to the console using the printf() function.
+
+- The main() function returns 0 to indicate successful completion of the program.
+
+
+
