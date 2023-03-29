@@ -1,7 +1,7 @@
 | No. | Questions                                                               | Answers and Explanations                                    |
 |-----|-------------------------------------------------------------------------|-------------------------------------------------------------|
 | 1.  | Write a C program to find frequency of each digit in a given integer.   | [Link -> ](/src/Question_Sets/Set_4/Answers/Question_1.md)  |
-| 2.  | Write a C program to enter a number and print it in words.              | [Link -> ](/src/Question_Sets/Set_4/Answers/Question_2.md)  |                                                                       
+| 2.  | Write a C program to enter a digit and print it in words.               | [Link -> ](/src/Question_Sets/Set_4/Answers/Question_2.md)  |                                                                       
 | 3.  | Write a C program to print all ASCII character with their values.       | [Link -> ](/src/Question_Sets/Set_4/Answers/Question_3.md)  |                        
 | 4.  | Write a C program to find power of a number using for loop.             | [Link -> ](/src/Question_Sets/Set_4/Answers/Question_4.md)  |                                               
 | 5.  | Write a C program to find all factors of a number.                      | [Link -> ](/src/Question_Sets/Set_4/Answers/Question_5.md)  |                                              

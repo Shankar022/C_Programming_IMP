@@ -34,7 +34,11 @@ The `expression` is evaluated once and compared with the values of each `case` l
  - Notes:
     - If we do not use the `break` statement, all statements after the matching label are also executed.
     - The `default` clause inside the `switch` statement is optional.
+
+
+### Switch Statement Flowchart
 ***
+![img.png](images/switch.png)
 
 ### Example: Simple Calculator
 ```c
