@@ -11,7 +11,7 @@ int main() {
     
     // count the number of digits in n
     while (n != 0) {
-        digits_count++;
+        digits_count++; 
         n /= 10;
     }
     
