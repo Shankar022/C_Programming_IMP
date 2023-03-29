@@ -1,4 +1,4 @@
-# 7 . Write a C program to find HCF (GCD) of two numbers.
+# 7. Write a C program to find HCF (GCD) of two numbers.
 ***
 ```c
 #include <stdio.h>
